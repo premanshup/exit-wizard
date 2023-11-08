@@ -15,3 +15,4 @@ Please follow the below steps:
 8. Above grunt release will create a plugin zip inside plugin folder with version number suffix.
 
 9. Your zip is ready to use :-)
+10. Upload it to any website ( install ), activate and you will see the exit intent popup on frontend on all the pages first time when you will exit the page. Then after 30 days.
