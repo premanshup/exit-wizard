@@ -1,0 +1,18 @@
+{
+    "name": "coding-allstars/exit-wizard",
+    "description": "Exit Wizard - Exit Intent Popup for WordPress pages.",
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+        "wp-coding-standards/wpcs": "dev-main",
+        "phpcompatibility/phpcompatibility-wp": "*"
+    },
+    "scripts": {
+        "format": "phpcbf --standard=phpcs.xml.dist",
+        "lint": "phpcs --standard=phpcs.xml.dist"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

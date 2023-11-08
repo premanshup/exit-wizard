@@ -1,0 +1,211 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: "Inter Regular";
+    src: url("../fonts/Inter-Regular.ttf");
+}
+@font-face {
+    font-family: "Inter Bold";
+    src: url("../fonts/Inter-Bold.ttf");
+}
+
+/* Styles for the overlay */
+#acs-ew-wrapper {
+    /* Semi-transparent white background */
+    background: rgba(250, 250, 255, 0.88);
+    display : none;
+    height: 100%;
+    left: 0;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styles for the popup content */
+.acs-ew-content {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: initial;
+    left: 0px;
+    margin: 4% auto;
+    max-width: 1200px;
+    position: relative;
+    right: 0px;
+    text-align: center;
+    width: 100%;
+    z-index: 99998;
+}
+
+/* Close button styles */
+#acs-ew-close svg {
+    background: #f2f5f9;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 22px;
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 22px;
+}
+
+.acs-ew-overlay-outer {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.acs-ew-overlay {
+    background-color: #191a1b;
+    height: 100%;
+}
+
+/* Popup content inner container */
+.acs-ew-content-inner {
+    background-image: url(https://img.convertflow.co/production/websites/3/1553126327-bg-conversion-play-popups-light.png);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 70px 120px;
+    position: relative;
+}
+
+/* Styles for the left content */
+.acs-ew-content-left {
+    padding-right: 10px;
+    text-align: center;
+    width: 41.66666667%;
+}
+
+
+.acs-ew-content-left-inner>* {
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.acs-ew-content-left-inner>*:last-child {
+    padding-top: 0px;
+}
+
+.acs-ew-top-h {
+    font-family: "Roboto Bold", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 23.75px;
+    margin: 0;
+    padding: 5px 5px 0 0; 
+}
+
+.acs-ew-content-left h2 {
+    font-family: "Inter Bold";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.acs-ew-content-left h3 {
+    font-family: "Roboto Regular", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Styles for the right content (form) */
+.acs-ew-content-right {
+    padding-top: 10px;
+    width: 58.33333333%;
+}
+
+.acs-ew-content-right-inner > img {
+    max-width: 100%;
+}
+
+/* Form input and button styles */
+.acs-ew-content-left form {
+    margin: 0 auto;
+    max-width: 375px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.acs-ew-content-left input[type="email"],
+.acs-ew-content-left input[type="email"]:focus-visible,
+.acs-ew-content-left input[type="email"]:focus {
+    background: #fef3f0;
+    border: 1px solid #DBDBDB;
+    font-size: 15px;
+    line-height: 22.5px;
+    margin-bottom: 10px;
+    outline: 0;
+    padding: 11px 0px 9px 10px;
+    transition: background 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
+    width: 100%;
+}
+
+.acs-ew-content-left input[type="submit"] {
+    background-color: #003fff;
+    border-radius: 4px;
+    border: 2px solid #003fff;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "Inter Regular";
+    font-size: 18px;
+    line-height: 25px;
+    padding: 8px 15px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    width: 100%;
+}
+
+.acs-ew-content-left input[type="submit"]:hover {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.acs-ew-policy {
+    color: rgb(189, 195, 199);
+    font-family: "Inter Regular", sans-serif;
+    font-size: 10px;
+    line-height: 10px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.acs-ew-policy > a,
+.acs-ew-policy > a:focus {
+    color: rgb(189, 195, 199);
+}
+
+.acs-ew-policy > a:hover {
+    color: #a8abae;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .acs-ew-content-inner {
+        flex-direction: column;
+    }
+
+    .acs-ew-content-left {
+        flex: none;
+        width: 100%;
+    }
+
+    .acs-ew-content-right {
+        display: none;
+    }
+}

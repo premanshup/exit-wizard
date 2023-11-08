@@ -1,0 +1,12 @@
+{
+  "name": "exit-wizard",
+  "version": "1.0.0",
+  "main": "Gruntfile.js",
+  "author": "Coding Allstars",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "~0.10.0",
+    "grunt-terser": "^2.0.0",
+    "grunt-wp-i18n": "^1.0.3"
+  }
+}
